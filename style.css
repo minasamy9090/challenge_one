@@ -1,0 +1,71 @@
+
+body{
+    display: grid; 
+    grid-template-columns: 0.5fr 2.1fr 0.4fr; 
+    grid-template-rows: 0.4fr 0.4fr 2.8fr 0.4fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+        "f1 f3 f2"
+        "f1 in f2"
+        "f1 table f2"
+        "f1 f4 f2";
+    font-size: 16px;
+    font-weight: normal;
+    /* <-- Color is Generated using Generator --> */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,68,1) 35%, rgba(0,212,255,1) 100%);
+    color: gray;
+}   
+table{
+    margin-left: auto;
+    margin-right: auto;
+    /* <-- Color is Generated using Generator --> */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* <-- Color is Generated using Generator --> */
+    border-radius: 18px;
+    overflow: hidden;
+    grid-area: table;
+    width:100%;
+}
+thead{
+    background-color:grey;
+    color: black;
+}
+td{
+    font-family: Montserrat-Regular;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.4;
+}
+th{         
+    font-size: 24px;                
+    color: white;
+    line-height: 2;
+    background-color: #444;
+}
+td:hover{
+    background-color: rgba(255,255,255,0.2)
+}
+.container{
+    grid-area: in;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+button{
+    align-items: center;
+    /* <-- Color is Generated using Generator --> */
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;   
+}
+
+button:disabled{
+    border: 5px solid rgb(83, 5, 5);
+}
